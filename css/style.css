@@ -1,0 +1,48 @@
+/* Background Colors */
+.bg-orange {
+  background-color: #FFA500 !important;
+}
+.bg-blue {
+  background-color: #1a34dd !important;
+}
+.bg-gray {
+  background-color: #EEE !important;
+  padding: 2%;
+}
+
+/* Text Formatting */
+.bodyText {
+  margin: 2%;
+  margin-right: 2%;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/* Carousel Formatting */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+  margin: 2%;
+}
+
+.carousel-image {
+  display: block;
+  height: 300px;
+  min-width: 150px;
+  max-width: 100%;
+  margin-right: 10px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.carousel.is-fullscreen .carousel-image {
+  height: auto;
+  max-height: 100%;
+}
