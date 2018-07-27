@@ -10,13 +10,15 @@
     <meta name="author" content="Travis Laws">
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/flickity.css" media="screen">
 
 </head>
 
 <body>
+<!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
       <a class="navbar-brand" href="#">Microvisions</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -28,25 +30,25 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="html/contact.html">Contact Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="html/about.html">About</a>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="https://computereaseallsource.com/landing.asp">Forms</a>
+              <a class="nav-link" href="#">Forms</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="html/payment.html">Payments</a>
+              <a class="nav-link" href="#">Payments</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="html/about-ce.html">About ComputerEase</a>
+              <a class="nav-link" href="#">About ComputerEase</a>
             </li>
           </ul>
       </div>
   </nav>
 <!-- Carousel -->
-  <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 2 }'>
+  <div class="carousel hide" data-flickity='{ "fullscreen": true, "lazyLoad": 2 }'>
       <img class="carousel-image"
         data-flickity-lazyload="img/arc1.jpg" />
       <img class="carousel-image"
@@ -58,16 +60,55 @@
       <img class="carousel-image"
         data-flickity-lazyload="img/arc5.jpg" />
   </div>
+<!-- Body -->
   <div class="container bg-gray bodyText">
-  <h1 align="right">Inovation. Now.</h1>
+  <h1 class="right">Inovation. Now.</h1>
   <p>Microvisions is an authorized ComputerEase Software provider. Over 6,000 contractors have chosen ComputerEase
     Construction Accounting Software and Project Management Software. The best construction software is easy to use and
     works the way you work. Software that integrates Job Cost, Construction Accounting, and Project Management with a remote
     job-to office tool is the future for modern construction software.</p>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="js/flickity.pkgd.js"></script>
+  <div class="row bodyRows">
+    <div class="col-xs-12 col-md-3 bg-gray">
+      <h2>Job Costing</h2>
+        <p>I like to beat the brush. Everybody's different. Trees are different. Let them all be individuals.
+          The more we do this - the more it will do good things to our heart. Now we don't want him to get lonely, so we'll give him a little friend.</p>
+    </div>
+    <div class="col-xs-12 col-md-3 bg-gray">
+      <h2>Construction Accounting</h2>
+      <p>The man who does the best job is the one who is happy at his job. If you don't like it - change it. It's your world. No worries.
+        No cares. Just float and wait for the wind to blow you around. We must be quiet, soft and gentle.</p>
+    </div>
+    <div class="col-xs-12 col-md-3 bg-gray">
+      <h2>Project Management </h2>
+        <p>Volunteering your time; it pays you and your whole community fantastic dividends. The little tiny Tim easels will let you down. Automatically, all of these beautiful,
+          beautiful things will happen. I want everbody to be happy. That's what it's all about. This is your world.</p>
+  </div>
+  </div>
+<!-- Footer -->
+<div class="row footer center-block">
+  <div class="col-xs-7 center-block">
+    <p><strong>Sign up for our newsletter!</strong></p>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Email">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button" onclick="buttonPress()" >Sign up</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div id="notification">Thank You for Subscribing!</div>
+
+<!-- JavaScript -->
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<!-- Carousel -->
+<script src="js/flickity.pkgd.js"></script>
+<!-- Additional -->
+<script src="js/script.js"></script>
 </body>
 </html>
